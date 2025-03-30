@@ -6,7 +6,7 @@ A [twig](https://github.com/twig/twig) extension that allows the following langu
 {% tag 'some-context-tag', 'some-other-context-tag' %}
 ```
 
-This cen be used to collect all tags defined when parsing and saving them to a custom `Template` method at compile-time,
+This can be used to collect all tags defined when parsing and saving them to a custom `Template` method at compile-time,
  which in turn makes it possible to predict which context is required for the respective template at runtime,
  before rendering the actual contents.
 
