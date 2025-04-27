@@ -1,9 +1,10 @@
 {
-  "type": "package",
+  "type": "library",
   "name": "machinateur/twig-context-tags",
   "description": "A twig extension to enable the use of context tags in templates.",
   "keywords": ["twig", "extension", "php", "context-tag"],
   "homepage": "https://github.com/machinateur/twig-context-tags",
+  "license": "MIT",
   "authors": [
     {
       "name": "machinateur",
