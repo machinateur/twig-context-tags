@@ -43,6 +43,12 @@ use Twig\TokenParser\AbstractTokenParser;
  * {% tag 'some-context-tag', 'some-other-context-tag' %}
  * ```
  *
+ * Or alternatively also using an array of tags (not defined dynamically!):
+ *
+ * ```
+ * {% tag ['some-context-tag', 'some-other-context-tag'] %}
+ * ```
+ *
  * This allows to collect all tags when parsing and saving them to a custom `Template` method at compile-time,
  *  which in turn makes it possible to predict which context is required for the respective template at runtime,
  *  before rendering the actual contents.
