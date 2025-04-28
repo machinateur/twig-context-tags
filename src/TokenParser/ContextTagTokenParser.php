@@ -64,7 +64,8 @@ class ContextTagTokenParser extends AbstractTokenParser
         // Copied from "extends" tag, which is similar in that regard.
         if ($this->parser->peekBlockStack()) {
             throw new SyntaxError('Cannot use "tag" in a block.', $token->getLine(), $stream->getSourceContext());
-        } elseif ( ! $this->parser->isMainScope()) {
+        }
+        if ( ! $this->parser->isMainScope()) {
             throw new SyntaxError('Cannot use "tag" in a macro.', $token->getLine(), $stream->getSourceContext());
         }
 
